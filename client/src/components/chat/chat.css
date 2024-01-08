@@ -1,0 +1,455 @@
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    #txtInput {
+        display: inline-block;
+        width: 80%;
+        margin-top: 80%;        
+    }
+
+    .chatForm {
+        width: 100%;
+    }
+
+    #contactHeader {
+        margin-top: 2%;
+        border-bottom: 1px solid rgb(192, 190, 190);
+        width: 101%;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    #chtboxDiv {
+        position: relative;
+        z-index: 1;
+        align-items: flex-end;
+        height: 88%;
+        width: 25%;  
+        background-color: whitesmoke;      
+    }
+
+    main {
+        margin: 0% 2% 0% 3%;
+    }
+
+    .messageBox {
+        margin-top: 2%;
+        background-color: #4C6663 !important;
+    }
+
+    .messageBox.ownMsg {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        background-color: #4C6663 !important;
+    }
+
+    .messageBox.ownMsg {
+        align-items: flex-end;
+    }
+
+    .messageBox.ownMsg .text {
+        background-color: #A7E2E3;
+    }
+
+    .message {        
+        display: flex;
+        background-color: #4C6663;
+    }
+
+    .text {        
+        background-color: rgb(228, 225, 225);
+        padding: 10px;
+        font-size: 14px;
+        font-family: 'Lexend', sans-serif;
+        border-radius: 20px;
+        max-width: 300px;
+    }
+
+    .frndName {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'Lexend', sans-serif;
+        background-color: #4C6663;
+        color: #80CFA9;
+    }
+
+    #chtRmDiv {
+        display: none;
+    }
+
+    #smchtRmDiv {
+        border: none;
+    } 
+
+    .smchtRmCard {
+        font-family: 'Lexend', sans-serif;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .chtRmCard {
+        display: none;
+    }
+
+    #chtRmCard:hover {
+        background-color: rgb(226, 223, 223);
+    }
+
+    .smbanner {
+        background-color: whitesmoke;
+        font-family: 'Lexend', sans-serif;
+        font-size: 22px;
+        padding: 1%;
+        margin-top: 8%;
+    }
+
+    .lgbanner{
+        display: none;
+    }
+
+    .smfullName {
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* align-items: center; */
+        /* text-align: center !important;
+        margin-left: 30%; */
+        background-color: whitesmoke;
+        /* margin-top: 5% !important; */
+    }
+
+    .functions {
+        width: 13%;
+        height: 5%;
+        background-color: #4C6663;
+        margin-top: -1%;
+        display: block;
+        
+
+    }
+
+    #edit, #delete {
+        background-color: #4C6663;
+        margin-left: 10px !important;
+        font-size: 12px;
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+
+    .time {
+        font-size: 12px;
+        background-color: #4C6663;
+        margin-top: -2%;
+    }
+
+    .editArea {
+        background-color: whitesmoke !important;
+    }
+
+    .checkBtn {
+        border: none;
+        border-radius: 10%;
+        padding: 2%;
+        background-color: rgb(190, 187, 187);
+        margin-left: -20%;
+        margin-right: 25%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    #txtInput {
+        display: inline-block;
+        width: 80%;
+        margin-top: 80%;        
+    }
+
+    .chatForm {
+        width: 100%;
+    }
+
+    #contactHeader {
+        margin-top: 2%;
+        border-bottom: 1px solid rgb(192, 190, 190);
+        width: 101%;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    #chtboxDiv {
+        position: relative;
+        z-index: 1;
+        align-items: flex-end;
+        height: 88%;
+        width: 25%;  
+        background-color: whitesmoke;      
+    }
+
+    main {
+        margin: 0% 2% 0% 3%;
+    }
+
+    .messageBox {
+        margin-top: 2%;
+        background-color: #4C6663;
+    }
+
+    .messageBox.ownMsg {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        background-color: #4C6663;
+    }
+
+    .messageBox.ownMsg {
+        align-items: flex-end;
+    }
+
+    .messageBox.ownMsg .text {
+        background-color: #A7E2E3;
+    }
+
+    .message {        
+        display: flex;
+        background-color: #4C6663;
+    }
+
+    .text {        
+        background-color: rgb(228, 225, 225);
+        padding: 10px;
+        font-size: 14px;
+        font-family: 'Lexend', sans-serif;
+        border-radius: 20px;
+        max-width: 300px;
+    }
+
+    .frndName {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'Lexend', sans-serif;
+        background-color: #4C6663;
+        color: #80CFA9;
+    }
+
+    #chtRmDiv {
+        border: none;
+    } 
+
+    #smchtRmDiv, .smchtRmCard {
+        display: none;
+    }
+
+    .chtRmCard {
+        font-family: 'Lexend', sans-serif;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    #chtRmCard:hover {
+        background-color: rgb(226, 223, 223);
+    }
+
+    .lgbanner {
+        background-color: whitesmoke;
+        font-family: 'Lexend', sans-serif;
+        font-size: 22px;
+        padding: 1%;
+    }
+
+    .smbanner {
+        display: none;
+    }
+
+    .fullName {
+        margin-left: 2%;
+        background-color: whitesmoke;
+    }
+
+    .functions {
+        width: 13%;
+        height: 5%;
+        background-color: #4C6663;
+        margin-top: -1%;
+        display: block;
+        
+
+    }
+
+    #edit, #delete {
+        background-color: #4C6663;
+        margin-left: 10px !important;
+        font-size: 12px;
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+
+    .time {
+        font-size: 12px;
+        background-color: #4C6663;
+        margin-top: -1%;
+    }
+
+    .editArea {
+        background-color: whitesmoke !important;
+    }
+
+    .checkBtn {
+        border: none;
+        border-radius: 10%;
+        padding: 2%;
+        background-color: rgb(190, 187, 187);
+        margin-left: -20%;
+        margin-right: 25%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #txtInput {
+        display: inline-block;
+        width: 80%;
+        margin-top: 80%;        
+    }
+
+    .chatForm {
+        width: 100%;
+    }
+
+    #contactHeader {
+        margin-top: 2%;
+        border-bottom: 1px solid rgb(192, 190, 190);
+        width: 101%;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    #chtboxDiv {
+        position: relative;
+        z-index: 1;
+        align-items: flex-end;
+        height: 88%;
+        width: 25%;  
+        background-color: whitesmoke;      
+    }
+
+    main {
+        margin: 0% 2% 0% 3%;
+    }
+
+    .messageBox {
+        margin-top: 2%;
+        background-color: #4C6663;
+    }
+
+    .messageBox.ownMsg {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        background-color: #4C6663;
+    }
+
+    .messageBox.ownMsg {
+        align-items: flex-end;
+    }
+
+    .messageBox.ownMsg .text {
+        background-color: #A7E2E3;
+    }
+
+    .message {        
+        display: flex;
+        background-color: #4C6663;
+    }
+
+    .text {        
+        background-color: rgb(228, 225, 225);
+        padding: 10px;
+        font-size: 14px;
+        font-family: 'Lexend', sans-serif;
+        border-radius: 20px;
+        max-width: 300px;
+    }
+
+    .frndName {
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'Lexend', sans-serif;
+        background-color: #4C6663;
+        color: #80CFA9;
+    }
+
+    #chtRmDiv {
+        border: none;
+    } 
+
+    #smchtRmDiv {
+        display: none;
+    }
+
+    .smchtRmCard {
+        display: none;
+    }
+
+    #chtRmCard {
+        font-family: 'Lexend', sans-serif;
+        background-color: whitesmoke;
+        cursor: pointer;
+    }
+
+    #chtRmCard:hover {
+        background-color: rgb(226, 223, 223);
+    }
+
+    .lgbanner {
+        background-color: whitesmoke;
+        font-family: 'Lexend', sans-serif;
+        font-size: 22px;
+        padding: 1%;
+    }
+
+    .smbanner {
+        display: none;
+    }
+
+    .fullName {
+        margin-left: 2%;
+        background-color: whitesmoke;
+    }
+
+    .functions {
+        width: 13%;
+        height: 5%;
+        background-color: #4C6663;
+        margin-top: -1%;
+        display: block;
+        
+
+    }
+
+    #edit, #delete {
+        background-color: #4C6663;
+        margin-left: 10px !important;
+        font-size: 12px;
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+
+    .time {
+        font-size: 12px;
+        background-color: #4C6663;
+        margin-top: -1%;
+    }
+
+    .editArea {
+        background-color: whitesmoke !important;
+    }
+
+    .checkBtn {
+        border: none;
+        border-radius: 10%;
+        padding: 2%;
+        background-color: rgb(190, 187, 187);
+        margin-left: -20%;
+        margin-right: 25%;
+    }
+}

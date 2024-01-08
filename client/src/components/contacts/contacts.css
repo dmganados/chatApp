@@ -1,0 +1,93 @@
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    #cntctsDiv {
+        display: none;
+    }
+
+    #smcntctsDiv {
+        font-family: 'Lexend', sans-serif;
+        border: none;
+    }   
+
+    #smcntctCard {
+        cursor: pointer;
+        background-color: whitesmoke;
+        font-size: 15px !important;
+    }
+
+    #cntctCard:hover {
+        background-color: rgb(226, 223, 223);
+    }
+
+    .connectBtn {
+        display: block;
+        float: right;
+        background-color: #4C6663 !important;
+        border-color: #4C6663 !important;
+        width: 25%;
+        font-size: 10px !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #smcntctsDiv {
+        display: none;
+    }
+
+    #cntctsDiv {
+        font-family: 'Lexend', sans-serif;
+        border: none;
+    }   
+
+    #cntctCard {
+        cursor: pointer;
+        background-color: whitesmoke;
+        font-size: 15px !important;
+    }
+
+    #cntctCard:hover {
+        background-color: rgb(226, 223, 223);
+    }
+
+    .connectBtn {
+        display: block;
+        float: right;
+        background-color: #4C6663 !important;
+        border-color: #4C6663 !important;
+        width: 25%;
+        font-size: 10px !important;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #smcntctsDiv {
+        display: none;
+    }
+
+    #cntctsDiv {
+        font-family: 'Lexend', sans-serif;
+        border: none;
+    }   
+
+    #cntctCard {
+        cursor: pointer;
+        background-color: whitesmoke;
+        font-size: 15px !important;
+    }
+
+    #cntctCard:hover {
+        background-color: rgb(226, 223, 223);
+    }
+
+    .connectBtn {
+        display: block;
+        float: right;
+        background-color: #4C6663 !important;
+        border-color: #4C6663 !important;
+        width: 25%;
+        font-size: 10px !important;
+    }
+}

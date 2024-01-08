@@ -1,0 +1,342 @@
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .prflCntainer {
+        display: none;
+    }
+
+    .smprflCntainer {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 50px;
+    }
+
+    .smpfltopCard {
+        grid-column: 5/6 !important;
+    }
+
+    .smreturnArrow {
+        font-size: 2rem;
+        cursor: pointer;
+        width: 1rem;
+    }
+
+    .smreturnArrow:link, .smreturnArrow:visited, .smreturnArrow:hover, .smreturnArrow:active {
+        text-decoration: none;
+        color: black;
+    }
+
+    .smreturnChat {
+        position: absolute;
+        display: inline-block;
+        top: 4rem;
+        left: 10%;
+        width: 10rem;
+        height: 1rem;
+        grid-column: 1/1;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .smprofileCard {
+        top: 5rem;
+        grid-column: 2/4;
+
+    }
+
+    .smaccntOwner {
+        position: relative;
+        display: block;
+        top: 50%;
+        font-family: 'Lexend', sans-serif;
+        width: 15rem !important;
+    }
+
+    .smemail {
+        position: relative;
+        display: block;
+        top: 55% !important;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .smaccFunction {
+        position: relative;
+        display: flex;
+        grid-column: 2/2;
+        top: 5rem;
+    }
+
+    .smedit, .smdelete {
+        font-size: 10px !important;
+        margin-top: 5%;
+        background-color: #4C6663 !important;
+        border-color: #4C6663 !important;
+        margin-left: 8%;
+    }
+
+    .delete, .save {
+        margin-left: 7%;
+    }
+
+    .cancel, .save {
+        position: relative;
+        display: flex;
+        margin-top: 2% !important;
+        left: 5rem !important;
+    }
+
+    .editModal, .namesModal, .modalGrp {
+        background-color: #4C6663;
+    }
+
+    .smeditModal {
+        border-radius: 8px;
+    }
+
+    .namesModal {
+        margin-top: 2%;
+    }
+
+    .smdelBackground {
+        background-color: whitesmoke;
+    }
+
+    .smmyIcon, .smtitle, .swal2-icon-content, .swal2-popup, .swal2-title, .swal2-html-container, .swal2-success-ring, .swal2-actions {
+        background-color: whitesmoke !important;
+    }
+
+    .swal2-confirm {
+        background-color: rgb(207, 51, 51) !important;
+        border-color:  rgb(207, 51, 51) !important;
+    }
+
+    .swal2-cancel {
+        background-color: #4C6663 !important;
+    }
+
+    .swal2-icon {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    .smprflCntainer {
+        display: none;
+    }
+
+    .prflCntainer {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 50px;
+    }
+
+    .pfltopCard {
+        grid-column: 5/6 !important;
+    }
+
+    .returnArrow {
+        font-size: 2rem;
+        cursor: pointer;
+        width: 1rem;
+    }
+
+    .returnArrow:link, .returnArrow:visited, .returnArrow:hover, .returnArrow:active {
+        text-decoration: none;
+        color: black;
+    }
+
+    .returnChat {
+        position: absolute;
+        display: inline-block;
+        top: 4rem;
+        left: 8%;
+        width: 10rem;
+        height: 1rem;
+        grid-column: 1/1;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .profileCard {
+        top: 5rem;
+        grid-column: 2/4;
+
+    }
+
+    .accntOwner {
+        position: relative;
+        display: block;
+        padding-top: 5rem;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .email {
+        position: relative;
+        display: block;
+        top: 8% !important;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .accFunction {
+        position: relative;
+        display: flex;
+        grid-column: 2/2;
+        top: 50%;
+    }
+
+    .edit, .delete {
+
+        background-color: #4C6663 !important;
+        border-color: #4C6663 !important;
+    }
+
+    .delete, .save {
+        margin-left: 7%;
+    }
+
+    .cancel, .save {
+        position: relative;
+        display: flex;
+        margin-top: 2%;
+        left: 30%;
+    }
+
+    .editModal, .namesModal, .modalGrp {
+        background-color: #4C6663 !important;
+    }
+
+    .editModal {
+        border-radius: 8px !important;
+    }
+
+    .namesModal {
+        margin-top: 2%;
+    }
+
+    .delBackground {
+        background-color: whitesmoke;
+    }
+
+    .myIcon, .title, .swal2-icon-content, .swal2-popup, .swal2-title, .swal2-html-container, .swal2-success-ring, .swal2-actions {
+        background-color: whitesmoke !important;
+    }
+
+    .swal2-confirm {
+        background-color: rgb(207, 51, 51) !important;
+        border-color:  rgb(207, 51, 51) !important;
+    }
+
+    .swal2-cancel {
+        background-color: #4C6663 !important;
+    }
+    
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .smprflCntainer {
+        display: none;
+    }
+    .prflCntainer {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 50px;
+    }
+
+    .pfltopCard {
+        grid-column: 5/6 !important;
+    }
+
+    .returnArrow {
+        font-size: 2rem;
+        cursor: pointer;
+        width: 1rem;
+    }
+
+    .returnArrow:link, .returnArrow:visited, .returnArrow:hover, .returnArrow:active {
+        text-decoration: none;
+        color: black;
+    }
+
+    .returnChat {
+        position: absolute;
+        display: inline-block;
+        top: 4rem;
+        left: 8%;
+        width: 10rem;
+        height: 1rem;
+        grid-column: 1/1;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .profileCard {
+        top: 5rem;
+        grid-column: 2/4;
+
+    }
+
+    .accntOwner {
+        position: relative;
+        display: block;
+        padding-top: 5rem;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .email {
+        position: relative;
+        display: block;
+        top: 3rem !important;
+        font-family: 'Lexend', sans-serif;
+    }
+
+    .accFunction {
+        position: relative;
+        display: flex;
+        grid-column: 2/2;
+        top: 5rem;
+    }
+
+    .edit, .delete {
+        background-color: #4C6663 !important;
+        border-color: #4C6663 !important;
+    }
+
+    .delete, .save {
+        margin-left: 7%;
+    }
+
+    .cancel, .save {
+        position: relative;
+        display: flex;
+        margin-top: 2%;
+        left: 30%;
+    }
+
+    .editModal, .namesModal, .modalGrp {
+        background-color: #4C6663 !important;
+    }
+
+    .editModal {
+        border-radius: 8px;
+    }
+
+    .namesModal {
+        margin-top: 2%;
+    }
+
+    .delBackground {
+        background-color: whitesmoke;
+    }
+
+    .myIcon, .title, .swal2-icon-content, .swal2-popup, .swal2-title, .swal2-html-container, .swal2-success-ring, .swal2-actions {
+        background-color: whitesmoke !important;
+    }
+
+    .swal2-confirm {
+        background-color: rgb(207, 51, 51) !important;
+        border-color:  rgb(207, 51, 51) !important;
+    }
+
+    .swal2-cancel {
+        background-color: #4C6663 !important;
+    }
+}

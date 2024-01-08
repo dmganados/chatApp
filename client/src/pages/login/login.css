@@ -1,0 +1,120 @@
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    #lgnForm {
+        width: 15rem;
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lgnLabel, .lgnGroup, #lgnCard, .loginBtn {
+        background-color: #4C6663;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 0.90rem !important;
+    }
+
+    #lgnCard {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .lgnGroup {
+        margin-bottom: 1rem;
+    }
+
+    .textArea {
+        font-size: 12px !important;
+    }
+
+    .regStament, .regLink {
+        background-color: #4C6663;
+        margin: 1rem auto auto auto;
+        color: black;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 0.80rem !important;
+    }
+    
+    .regLink:hover {
+       color: black;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #lgnForm {
+        width: 30rem;
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lgnLabel, .lgnGroup, #lgnCard {
+        background-color: #4C6663;
+        font-size: 1rem;
+        font-family: 'Lexend', sans-serif !important;
+    }
+
+    #lgnCard {
+        padding: 2rem 3rem 2rem 3rem;
+    }
+
+    .lgnGroup {
+        margin-bottom: 2rem;
+    }
+
+    .regStament, .regLink {
+        background-color: #4C6663;
+        margin: 1rem auto auto auto;
+        color: black;
+        font-family: 'Lexend', sans-serif !important;
+    }
+
+    .textArea {
+        font-size: 15px !important;
+    }
+    
+    .regLink:hover {
+       color: black;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #lgnForm {
+        width: 40rem;
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lgnLabel, .lgnGroup, #lgnCard {
+        background-color: #4C6663;
+        font-family: 'Lexend', sans-serif !important;
+    }
+
+    #lgnCard {
+        padding: 2rem 3rem 2rem 3rem;
+    }
+
+    .lgnGroup {
+        margin-bottom: 2rem;
+    }
+
+    .textArea::placeholder, .textArea {
+        font-size: 15px !important;
+    }
+
+    .regStament, .regLink {
+        background-color: #4C6663;
+        margin: 1rem auto auto auto;
+        color: black;
+        font-family: 'Lexend', sans-serif !important;
+    }
+    
+    .regLink:hover {
+       color: black;
+    }
+
+    .swal2-title, .swal2-x-mark, .swal2-x-mark-line-left, .swal2-x-mark-line-right {
+        background-color: white !important;
+    }
+}
