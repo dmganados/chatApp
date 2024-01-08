@@ -25,7 +25,7 @@ function Login() {
 	// Create an effect hook to redirect the user to chat page. Current user can only access chat and profile page if logged in.
 	useEffect(() => {
 		if(localStorage.getItem('accessToken')) {
-			window.location.href = "/chatApp/chat";
+			window.location.href = "/chat";
 		}
 	})
 	
@@ -55,7 +55,7 @@ function Login() {
 					}
 				}).then(res => res.json()).then(convertedData => {
 					if (typeof convertedData._id !== "undefined") {
-						window.location.href = "/chatApp/chat";						
+						window.location.href = "/chat";						
 					} else {
 						return null
 					}
@@ -88,7 +88,7 @@ function Login() {
 				:
 				<Button className="loginBtn" variant="success" type="submit" disabled>Login</Button>
 			}
-			<span className="regStament">No account? <Link to="/chatApp" className="regLink">Register</Link></span>
+			<span className="regStament">No account? <Link to="/" className="regLink">Register</Link></span>
 			</Card>		
 			</Row>							
         </Form>

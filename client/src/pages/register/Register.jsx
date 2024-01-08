@@ -33,7 +33,7 @@ function Register() {
   // All users who are logged in can't go to register page. Successful logins will be redirected to chatroom
   useEffect(() => {
 		if(localStorage.getItem('accessToken')) {
-			window.location.href = "/chatApp/chat";
+			window.location.href = "/chat";
 		}
 	})
 
@@ -70,7 +70,7 @@ function Register() {
 			setPassword1('');
 			setPassword2('');
 
-			window.location.href = "/chatApp/login";
+			window.location.href = "/login";
 
 		}else {
 			alert('Please check your inputs')
@@ -123,7 +123,7 @@ function Register() {
             :
               <Button variant="success" className="btn-block regBtn" disabled>Register</Button>
           }
-          <span id="lgnStatement">Already have an account? <Link to="/chatApp/login" id="lgnLink">Login</Link> </span>
+          <span id="lgnStatement">Already have an account? <Link to="/login" id="lgnLink">Login</Link> </span>
         </Card> 
         </Row> 
         </Form>               

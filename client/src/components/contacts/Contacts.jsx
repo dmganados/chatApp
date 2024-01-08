@@ -32,7 +32,7 @@ export default function Contacts({contactsProp, socket}) {
             return false
         }    
         alert("A new connection is added.")
-        window.location.href = "/chatApp/chat";  
+        window.location.href = "/chat";  
         })      
       }
     

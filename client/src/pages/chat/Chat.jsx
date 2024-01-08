@@ -35,7 +35,7 @@ export default function Chat() {
   // The user will be sent back to login page if he tries to access chat page without loging in. 
   const redirect = () => {
     if (!token) {
-      window.location.href ="/chatApp/login"
+      window.location.href ="/login"
     }
   }
 
@@ -166,7 +166,7 @@ export default function Chat() {
 
   // Send button will show if text area is filled
   useEffect(() => {
-    if (message !== "") {
+    if (message !== "/") {
       setIsFilled(true)
     } else {
       setIsFilled(false)
@@ -176,7 +176,7 @@ export default function Chat() {
   // Create a logout function and redirect the user to login page if successfully loged out
   const logout = () => {
     localStorage.clear();
-    window.location.href="/chatApp/login";
+    window.location.href="/login";
   }
 
   // Show modal. This will only display for small screen 
@@ -195,7 +195,7 @@ export default function Chat() {
         <Navbar className="topCard">
           <Navbar.Collapse className="navItems">
           <NavDropdown title={userName} className="navigation">
-            <NavDropdown.Item href="/chatApp/profile">Profile</NavDropdown.Item>
+            <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
             <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
           </NavDropdown >
           </Navbar.Collapse>
@@ -301,7 +301,7 @@ export default function Chat() {
         <Navbar className="smtopCard">
           <Navbar.Collapse className="smnavItems">
           <NavDropdown title={userName} className="smnavigation">
-            <NavDropdown.Item href="/chatApp/profile">Profile</NavDropdown.Item>
+            <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
             <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
           </NavDropdown >
           </Navbar.Collapse>
