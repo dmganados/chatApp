@@ -35,7 +35,7 @@ export default function Chat() {
   // The user will be sent back to login page if he tries to access chat page without loging in. 
   const redirect = () => {
     if (!token) {
-      window.location.href ="/login"
+      window.location.href ="/chatApp/login"
     }
   }
 
@@ -176,7 +176,7 @@ export default function Chat() {
   // Create a logout function and redirect the user to login page if successfully loged out
   const logout = () => {
     localStorage.clear();
-    window.location.href="/login";
+    window.location.href="/chatApp/login";
   }
 
   // Show modal. This will only display for small screen 
@@ -195,7 +195,7 @@ export default function Chat() {
         <Navbar className="topCard">
           <Navbar.Collapse className="navItems">
           <NavDropdown title={userName} className="navigation">
-            <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
+            <NavDropdown.Item href="/chatApp/profile">Profile</NavDropdown.Item>
             <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
           </NavDropdown >
           </Navbar.Collapse>
@@ -301,7 +301,7 @@ export default function Chat() {
         <Navbar className="smtopCard">
           <Navbar.Collapse className="smnavItems">
           <NavDropdown title={userName} className="smnavigation">
-            <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
+            <NavDropdown.Item href="/chatApp/profile">Profile</NavDropdown.Item>
             <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
           </NavDropdown >
           </Navbar.Collapse>

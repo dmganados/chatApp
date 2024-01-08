@@ -33,7 +33,7 @@ export default function Profile() {
     // Event handler for the the logout function. User will be redirected to  login page after log out.
     const logout = () => {
         localStorage.clear();
-        window.location.href="/login";
+        window.location.href="/chatApp/login";
       }
 
       // Create modal where the user can edit his profile
@@ -59,7 +59,7 @@ export default function Profile() {
         if(newUpdate) {
           alert("Your profile information is successfully updated.")
         }
-        window.location.href="/profile"
+        window.location.href="/chatApp/profile"
       })
     }
 
@@ -71,7 +71,7 @@ export default function Profile() {
             method: 'DELETE'
           })
         localStorage.clear();
-        window.location.href="/login"
+        window.location.href="/chatApp/login"
       } else {
         alert("You clicked Cancel");
       }
@@ -94,13 +94,13 @@ export default function Profile() {
         <Navbar className="pfltopCard">
           <Navbar.Collapse className="navItems">
           <NavDropdown title={userName} className="navigation">
-            <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
+            <NavDropdown.Item href="chatApp/profile">Profile</NavDropdown.Item>
             <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
           </NavDropdown >
           </Navbar.Collapse>
         </Navbar>
 
-        <Link className='returnArrow' to="/chat" >&larr;</Link><span className='returnChat'>Return to Chat</span>
+        <Link className='returnArrow' to="/chatApp/chat" >&larr;</Link><span className='returnChat'>Return to Chat</span>
         <div className='profileCard'>
             <span className='accntOwner'>Account Owner: <h3>{userName}</h3></span>
             <span className='email'>Email: <h4>{currentUser.email}</h4></span>
@@ -140,13 +140,13 @@ export default function Profile() {
         <Navbar className="smpfltopCard">
           <Navbar.Collapse className="smnavItems">
           <NavDropdown title={userName} className="smnavigation">
-            <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
+            <NavDropdown.Item href="/chatApp/profile">Profile</NavDropdown.Item>
             <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
           </NavDropdown >
           </Navbar.Collapse>
         </Navbar>
 
-        <Link className='smreturnArrow' to="/chat" >&larr;</Link><span className='smreturnChat'>Return to Chat</span>
+        <Link className='smreturnArrow' to="/chatApp/chat" >&larr;</Link><span className='smreturnChat'>Return to Chat</span>
         <div className='smprofileCard'>
             <span className='smaccntOwner'>Account Owner: <h3>{userName}</h3></span>
             <span className='smemail'>Email: <h4>{currentUser.email}</h4></span>

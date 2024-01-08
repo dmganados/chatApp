@@ -15,10 +15,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/chatApp" element={<Register />} />
+        <Route path="/chatApp/login" element={<Login />} />
+        <Route path="/chatApp/chat" element={<Chat />} />
+        <Route path="/chatApp/profile" element={<Profile />} />
 
       </Routes>
     </BrowserRouter>
