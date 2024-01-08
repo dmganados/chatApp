@@ -1,7 +1,7 @@
 import React from "react";
 // Implement page routing
 // acquire the utilities from react-router-dom
-import { BrowserRouter, Routes, Route, HashRouter} from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 // Acquire the pages that will make up the app
