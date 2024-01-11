@@ -8,7 +8,7 @@ export default function Contacts({contactsProp, socket}) {
     // Get the information of the current user.
     useEffect(() => {
         const currentUser = async () => {
-            await fetch('http://localhost:4000/user/profile', {
+            await fetch('https://chat-server-ohlw.onrender.com/user/profile', {
               headers: {
                 Authorization: `Bearer ${token}`
               }
@@ -21,10 +21,10 @@ export default function Contacts({contactsProp, socket}) {
 
     // Once a person is selected a connection will be created.
     const connectHandler = async() => {        
-        await fetch(`http://localhost:4000/user/profile/${contactsProp._id}`).then(res => res.json()).then(profile => {
+        await fetch(`https://chat-server-ohlw.onrender.com/user/profile/${contactsProp._id}`).then(res => res.json()).then(profile => {
         let friendId = profile._id
         if (profile) {
-            fetch(`http://localhost:4000/conversations/connect/${currentProfile._id}/${friendId}`,{
+            fetch(`https://chat-server-ohlw.onrender.com/conversations/connect/${currentProfile._id}/${friendId}`,{
                 method: "POST",
             }).then(res => res.json()).then(connect => {              
             })            

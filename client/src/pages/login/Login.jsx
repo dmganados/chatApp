@@ -33,7 +33,7 @@ function Login() {
 	const loginUser = async (event) => {
 		event.preventDefault();
 
-		fetch('http://localhost:4000/user/login', {
+		fetch('https://chat-server-ohlw.onrender.com/user/login', {
 			method: 'POST',
 			headers: {
 				'Content-Type' : 'application/json'
@@ -49,7 +49,7 @@ function Login() {
 			if (typeof token !== 'undefined') {
 				localStorage.setItem('accessToken' ,token);
 
-				fetch('http://localhost:4000/user/profile', {
+				fetch('https://chat-server-ohlw.onrender.com/user/profile', {
 					headers: {
 						Authorization: `Bearer ${token}`
 					}

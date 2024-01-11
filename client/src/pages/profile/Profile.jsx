@@ -18,7 +18,7 @@ export default function Profile() {
     // Get the current user's information to display in the profile page, and the user's name will also be placed at the banner.
     const profile = async () => { 
         try {
-          await fetch('http://localhost:4000/user/profile', {
+          await fetch('https://chat-server-ohlw.onrender.com/user/profile', {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -46,7 +46,7 @@ export default function Profile() {
 
     // Event handler for edit button.
     const editProfile = async () => {
-      await fetch(`http://localhost:4000/user/profile/update/${currentUser._id}`, {
+      await fetch(`https://chat-server-ohlw.onrender.com/user/profile/update/${currentUser._id}`, {
         method: "PUT",
         headers: {
           "Content-Type" : "application/json"
@@ -67,7 +67,7 @@ export default function Profile() {
     const deactProfile = async () => {
       if (window.confirm("Are you sure you want to delete your account? You won't be able to revert this!")) {
         alert("You clicked OK");
-        await fetch(`http://localhost:4000/user/profile/delete/${currentUser._id}`, {
+        await fetch(`https://chat-server-ohlw.onrender.com/user/profile/delete/${currentUser._id}`, {
             method: 'DELETE'
           })
         localStorage.clear();

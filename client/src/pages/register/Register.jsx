@@ -41,7 +41,7 @@ function Register() {
   const registerUser = async (eventSubmit) => {
     eventSubmit.preventDefault()
 
-    const isRegistered = fetch('http://localhost:4000/user/register', {      
+    const isRegistered = fetch('https://chat-server-ohlw.onrender.com/user/register', {      
 			method: 'POST',			
 			headers: {
 				'Content-Type' : 'application/json'

@@ -42,7 +42,7 @@ export default function Chat() {
   // Get the user profile
   const profile = async () => { 
     try {
-      await fetch('http://localhost:4000/user/profile', {
+      await fetch('https://chat-server-ohlw.onrender.com/user/profile', {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -51,7 +51,7 @@ export default function Chat() {
       
       // Once you get the profile get the id to use as a reference of all its conversations
       let id = data._id;
-      fetch(`http://localhost:4000/conversations/connect/${id}`).then(res => res.json()).then(connect => {
+      fetch(`https://chat-server-ohlw.onrender.com/conversations/connect/${id}`).then(res => res.json()).then(connect => {
         setConversation(connect)
       })
     })
@@ -63,7 +63,7 @@ export default function Chat() {
   // Get all the all the users info to use as contacts 
   const allUsers = async () => {
     try {
-      await fetch('http://localhost:4000/user/all-users').then(res => res.json()).then(contactsData => {
+      await fetch('https://chat-server-ohlw.onrender.com/user/all-users').then(res => res.json()).then(contactsData => {
       setContactsCollection(contactsData.map(contactList => {   
         let user = currentUser._id
         return(
@@ -80,7 +80,7 @@ export default function Chat() {
   useEffect(() => {
     const getMessage = async () => {    
       try {
-        await fetch(`http://localhost:4000/message/messages/${convoId}`).then(res => res.json()).then(data => {
+        await fetch(`https://chat-server-ohlw.onrender.com/message/messages/${convoId}`).then(res => res.json()).then(data => {
         setChat(data)
       })
       } catch (error) {
@@ -90,12 +90,12 @@ export default function Chat() {
     getMessage()
   },[convoId])
 
-  // Create a function that a user could not sen message to a deactivated account.
+  // Create a function that a user could not see messages to a deactivated account.
   useEffect(() => {
       let frndId = currentChat?.users.find(mate => mate !== currentUser._id);
       let getUser = async () => {
         if (frndId !== undefined) {
-          await fetch(`http://localhost:4000/user/profile/${frndId}`).then(res => res.json()).then(friend => {
+          await fetch(`https://chat-server-ohlw.onrender.com/user/profile/${frndId}`).then(res => res.json()).then(friend => {
               setIsActive(friend)
           });
         } else {
@@ -107,7 +107,7 @@ export default function Chat() {
 
   // Integrate the websocket for real time chat
   useEffect(() => {
-    socket.current = io("ws://localhost:4000");
+    socket.current = io("https://chat-server-ohlw.onrender.com/");
     socket.current.emit("addUser", currentUser._id); 
     // This is just to check if socket.io connection is successful
     // socket.current.on("getUsers", users => {console.log(users)})    
@@ -118,7 +118,7 @@ export default function Chat() {
   const handleSendChat = async (event) => { 
     event.preventDefault() 
     if(currentChat){
-      await fetch(`http://localhost:4000/message/messages/${currentUser._id}`,{
+      await fetch(`https://chat-server-ohlw.onrender.com/message/messages/${currentUser._id}`,{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -403,4 +403,3 @@ export default function Chat() {
     </div>
   )
 }
-

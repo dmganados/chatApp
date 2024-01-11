@@ -48,7 +48,9 @@
     const io = new Server(server, {
         cors: {
             origin: "http://localhost:3000",
-            methods: ["GET", "PUT", "POST", "DELETE"]
+            methods: ["GET", "PUT", "POST", "DELETE"],
+            // headers: "Content-Type, Authorization",
+            // credentials: true
         },
     });
     
